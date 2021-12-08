@@ -1,0 +1,94 @@
+$blue: #04c1df;
+$black: #000;
+$white: #fff;
+$grey: #3d4142;
+$light-blue: #04c2dfc5;
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 0;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  .nav-wapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 2.5rem;
+    .logo {
+      font-weight: 500;
+    }
+    .navbar {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        a {
+          font-size: 1.2rem;
+          color: black;
+          padding: 0.7rem 0.7rem;
+
+          text-decoration: none;
+          &:hover {
+            background-color: $grey;
+            color: $white;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    .nav-wapper {
+      .menu-icon {
+        display: block;
+        .fas {
+          &.fa-times {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 99%;
+        background-color: $blue;
+
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /*we used clippy*/
+        &.active {
+          z-index: 10;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /*we used clippy*/
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          text-align: center;
+          font-size: 1.8rem;
+          padding: 2rem 0;
+          width: 100%;
+          a {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
