@@ -13,14 +13,40 @@ import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
 import YelpCamp from '../image/projects/YelpCamp.png'
 import { HashLink as Link } from 'react-router-hash-link'
-// import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 import './main.scss'
 const Main = () => {
-  // const navigate = useNavigate()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [subject, setSubject] = useState('')
 
-  // const handleRedirect = () => {
-  //   navigate('/thankyou')
-  // }
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(name, email, message, subject)
+
+    axios.defaults.headers.post['Content-Type'] = 'application/json'
+    axios
+      .post('https://formsubmit.co/ajax/classic19931126@gmail.com', {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error))
+
+    setName('')
+    setEmail('')
+    setMessage('')
+    setSubject('')
+    navigate('/thankyou')
+  }
+
   return (
     <>
       {/* -------------home section--------- */}
@@ -297,10 +323,7 @@ const Main = () => {
           </h3>
         </div>
         <div className='container flex-wrap' data-aos='zoom-in-down'>
-          <form
-            action='https://formsubmit.co/classic19931126@gmail.com'
-            method='POST'
-          >
+          <form onSubmit={handleSubmit}>
             <input
               type='hidden'
               name='_subject'
@@ -313,6 +336,9 @@ const Main = () => {
               name='name'
               placeholder='Name'
               className='box'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
             />
             <label htmlFor='subject'>Subject</label>
 
@@ -322,6 +348,8 @@ const Main = () => {
               name='subject'
               placeholder='Subject'
               className='box'
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
             />
             <label htmlFor='email'>Email</label>
 
@@ -331,6 +359,9 @@ const Main = () => {
               name='email'
               placeholder='Email'
               className='box'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <label htmlFor='message'>Message</label>
 
@@ -339,22 +370,13 @@ const Main = () => {
               id='message'
               cols='30'
               rows='10'
+              value={message}
               placeholder='Message'
+              onChange={(e) => setMessage(e.target.value)}
+              required
             ></textarea>
 
-            <input
-              type='hidden'
-              name='_next'
-              value='https://kind-pasteur-67da4f.netlify.app/thankyou'
-            />
-            <input
-              type='submit'
-              className='btn btn-blue'
-              id='name'
-              name='name'
-              placeholder='Name'
-              // onClick={handleRedirect}
-            />
+            <input type='submit' className='btn btn-blue' id='submit' />
           </form>
         </div>
       </section>
