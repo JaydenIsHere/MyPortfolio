@@ -292,18 +292,14 @@ const Main = () => {
         </div>
         <div className='container flex-wrap' data-aos='zoom-in-down'>
           <form
-            form
-            name='contact'
+            action='https://formsubmit.co/classic19931126@gmail.com'
             method='POST'
-            netlify-honeypot='bot-field'
-            data-netlify='true'
           >
-            <input type='hidden' name='form-name' value='contact' />
-            <p className='hidden'>
-              <label>
-                Don’t fill this out if you’re human: <input name='bot-field' />
-              </label>
-            </p>
+            <input
+              type='hidden'
+              name='_subject'
+              value='Your response is here!!'
+            ></input>
             <label htmlFor='name'>Name</label>
             <input
               type='text'
@@ -339,6 +335,12 @@ const Main = () => {
               rows='10'
               placeholder='Message'
             ></textarea>
+
+            <input
+              type='hidden'
+              name='_next'
+              value='https://kind-pasteur-67da4f.netlify.app/thankyou'
+            />
             <input
               type='submit'
               className='btn btn-blue'
