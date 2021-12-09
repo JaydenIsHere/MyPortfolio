@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className='header bg-blue'>
       <div className='nav-wapper'>
-        <Link to='#home' className='logo text-black md'>
+        <Link to='/#home' className='logo text-black md'>
           Portfo<span className='text-light'>lio</span>
         </Link>
 
@@ -22,16 +22,16 @@ const Navbar = () => {
 
         <nav className={click ? 'navbar active' : 'navbar'}>
           <ul>
-            <Link to='#home' onClick={handleClose}>
+            <Link to='/#home' onClick={handleClose}>
               Home
             </Link>
-            <Link to='#about' onClick={handleClose}>
+            <Link to='/#about' onClick={handleClose}>
               About
             </Link>
-            <Link to='#project' onClick={handleClose}>
+            <Link to='/#project' onClick={handleClose}>
               Project
             </Link>
-            <Link to='#contact' onClick={handleClose}>
+            <Link to='/#contact' onClick={handleClose}>
               Contact
             </Link>
           </ul>

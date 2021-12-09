@@ -13,8 +13,14 @@ import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
 import YelpCamp from '../image/projects/YelpCamp.png'
 import { HashLink as Link } from 'react-router-hash-link'
+// import { useNavigate } from 'react-router-dom'
 import './main.scss'
 const Main = () => {
+  // const navigate = useNavigate()
+
+  // const handleRedirect = () => {
+  //   navigate('/thankyou')
+  // }
   return (
     <>
       {/* -------------home section--------- */}
@@ -347,6 +353,7 @@ const Main = () => {
               id='name'
               name='name'
               placeholder='Name'
+              // onClick={handleRedirect}
             />
           </form>
         </div>

@@ -1,0 +1,40 @@
+.thankYou {
+  margin-top: 5rem;
+  .image {
+    width: 24rem;
+    overflow: hidden;
+    justify-self: center;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  h1 {
+    padding: 1rem 0;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .thankYou {
+    margin-top: 4rem;
+    .image {
+      width: 20rem;
+      overflow: hidden;
+      justify-self: center;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    h1 {
+      padding: 1rem 0;
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
