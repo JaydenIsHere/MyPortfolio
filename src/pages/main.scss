@@ -47,7 +47,7 @@ $light-blue: #04c2dfc5;
       z-index: -100;
       bottom: 40%;
       left: 50%;
-      opacity: 1;
+      opacity: 0.5;
     }
     .gear2 {
       width: 30%;
@@ -55,7 +55,7 @@ $light-blue: #04c2dfc5;
       z-index: -100;
       bottom: 70%;
       right: 80%;
-      opacity: 1;
+      opacity: 0.5;
     }
     .gear3 {
       width: 40%;
@@ -63,7 +63,7 @@ $light-blue: #04c2dfc5;
       z-index: -100;
       bottom: -50%;
       right: 80%;
-      opacity: 1;
+      opacity: 0.5;
     }
   }
 }
