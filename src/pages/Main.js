@@ -291,7 +291,19 @@ const Main = () => {
           </h3>
         </div>
         <div className='container flex-wrap' data-aos='zoom-in-down'>
-          <form action='#'>
+          <form
+            form
+            name='contact'
+            method='POST'
+            netlify-honeypot='bot-field'
+            data-netlify='true'
+          >
+            <input type='hidden' name='form-name' value='contact' />
+            <p className='hidden'>
+              <label>
+                Don’t fill this out if you’re human: <input name='bot-field' />
+              </label>
+            </p>
             <label htmlFor='name'>Name</label>
             <input
               type='text'
