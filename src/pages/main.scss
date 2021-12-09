@@ -217,6 +217,9 @@ $light-blue: #04c2dfc5;
     }
     input[type='submit'] {
       border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
     }
   }
 }
