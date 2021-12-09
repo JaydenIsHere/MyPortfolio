@@ -12,3 +12,9 @@ $light-blue: #04c2dfc5;
   margin-top: 3rem;
   border: 2px $black solid;
 }
+
+@media only screen and (max-width: 500px) {
+  .footer-content {
+    font-size: 1.2rem;
+  }
+}
