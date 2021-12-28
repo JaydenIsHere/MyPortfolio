@@ -11,7 +11,7 @@ import foodStore from '../image/projects/Food store.png'
 import JDSport from '../image/projects/JDSport.png'
 import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
-import YelpCamp from '../image/projects/YelpCamp.png'
+import palmtree from '../image/projects/palmtree.png'
 import { HashLink as Link } from 'react-router-hash-link'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -275,27 +275,26 @@ const Main = () => {
 
             <div className='project flex-wrap' data-aos='fade-up'>
               <div className='image'>
-                <img src={YelpCamp} alt='' />
+                <img src={palmtree} alt='' />
               </div>
               <div className='project-content'>
                 <h1>
-                  YelpCamp{' '}
-                  <span className='text-blue'>Full stack Application</span>
+                  PalmTree Bar{' '}
+                  <span className='text-blue'>Frontend Website</span>
                 </h1>
                 <p>
-                  This is full stack application.User can create their own
-                  account and share campground in the community where user can
-                  also leave review at other user campgound.{' '}
+                  This is a single page website and fully responsive. I created
+                  it from design to develop all done by me{' '}
                 </p>
                 <div className='buttoms'>
                   <a
-                    href='https://cryptic-escarpment-33252.herokuapp.com/'
+                    href='https://fervent-aryabhata-35842f.netlify.app/'
                     className='btn btn-blue'
                   >
                     Visit Site
                   </a>
                   <a
-                    href='https://github.com/JaydenIsHere/YelpCamp'
+                    href='https://github.com/JaydenIsHere/PalmTree'
                     className='btn btn-blue'
                   >
                     Repository
