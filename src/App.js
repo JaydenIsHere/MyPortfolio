@@ -4,11 +4,13 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ThankYou from './pages/ThankYou'
 import VideoProject from './pages/VideoProject'
+import ScrollToTop from './ScrollToTop'
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Main />}></Route>

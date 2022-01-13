@@ -369,9 +369,9 @@ const Main = () => {
                   Here you can find out all my video projects that I created{' '}
                 </p>
                 <div className='buttoms'>
-                  <a href='/videoproject' className='btn btn-blue'>
+                  <Link to='/videoproject' className='btn btn-blue'>
                     View Project
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
