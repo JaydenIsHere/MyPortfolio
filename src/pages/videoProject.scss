@@ -1,0 +1,171 @@
+.videoProject {
+  p {
+    font-size: 18px;
+  }
+  .headline {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  .card-image {
+    width: 25rem;
+    justify-self: center;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .card-content {
+    width: 35rem;
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .card {
+    margin: 5rem 2rem;
+    cursor: pointer;
+    p {
+      color: white;
+    }
+    &:hover {
+      transform: scale(0.992);
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .card-content {
+    width: 35rem;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      justify-self: center;
+    }
+  }
+
+  .card {
+    margin: 5rem 2rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.992);
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .videoProject {
+    .card-image {
+      width: 18rem;
+      justify-self: center;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+
+    .card-content {
+      width: 25rem;
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .card {
+    margin: 5rem 2rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.992);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .videoProject {
+    .grid-responsive {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card-image {
+      width: 16rem;
+      margin: 0 auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+
+    .card-content {
+      width: 25rem;
+      h2 {
+        font-size: 1.2rem;
+        margin: 1rem;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .card {
+    margin: 5rem 2rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.992);
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .videoProject {
+    p {
+      font-size: 16px;
+    }
+    .headline {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .card-image {
+      width: 15rem;
+      justify-self: center;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+
+    .card-content {
+      width: 28rem;
+      h2 {
+        font-size: 1.2rem;
+        margin: 1rem;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .card {
+    margin: 5rem 2rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.992);
+    }
+  }
+}

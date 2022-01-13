@@ -7,7 +7,14 @@ import javascript from '../image/javascript2.png'
 import sass from '../image/sass.png'
 import react from '../image/React.png'
 import xd from '../image/XD.png'
+import node from '../image/nodejs.png'
+import mongodb from '../image/mongodb.png'
+import API from '../image/API.png'
+import MySQL from '../image/MySQL.png'
+import WordPress from '../image/WordPress.png'
+import VideoProject from '../image/Video Project.jpg'
 import foodStore from '../image/projects/Food store.png'
+import JDweb from '../image/JD web.png'
 import JDSport from '../image/projects/JDSport.png'
 import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
@@ -82,52 +89,98 @@ const Main = () => {
             </h1>
             <h3>Get to know more about me </h3>
           </div>
-          <div className='about-body flex-wrap my-3'>
+          <div className='about-body flex-wrap my-3 py-3'>
             {/* item1 */}
+            <div className='about-image' data-aos='fade-right'>
+              <img src={JDweb} alt='' />
+            </div>
 
+            {/* item2*/}
             <div className='about-content text-light' data-aos='fade-left'>
               <h3 className='text-blue'>Hello!</h3>
               <p>
-                My name is Jayden and I’m a passionate Frontend Web Developer
-                using web technologies to build amazing products and focusing on
-                solving problems for different niches and different industries
-                using the power of technology.
+                My name is Jayden,Currently I'm working as a Videographer and
+                also is a self taught Frontend Web Developer using web
+                technologies to build amazing products and focusing on solving
+                problems for different niches and different industries using the
+                power of technology.
               </p>
               <p>
                 I will love to hear from you. Whether it’s a project. Job
                 opportunity, or just a chat Feel free to contact me
               </p>
             </div>
-            {/* item2 */}
-            <div className='about-icons' data-aos='fade-right'>
-              <h3 className='icon-text text-blue'>
-                The technologies I am using
-              </h3>
-              <div className='grid grid-3'>
+          </div>
+          {/* skill section */}
+          <div className='about-icons' data-aos='zoom-in'>
+            <h1 className='icon-text text-light'>Skills</h1>
+            {/* card-1 */}
+            <div className='about-wrapper'>
+              <h3 className='card-text text-center py-2'>Frontend</h3>
+              <div className='grid grid-3 py-3'>
                 <div className='icon'>
-                  <h4 className='text-light'>HTML</h4>
+                  <h4 className='text-black'>HTML</h4>
                   <img src={html} alt='' />
                 </div>
 
                 <div className='icon'>
-                  <h4 className='text-light'>CSS</h4>
+                  <h4 className='text-black'>CSS</h4>
                   <img src={css} alt='' />
                 </div>
                 <div className='icon'>
-                  <h4 className='text-light'>JavaScript</h4>
+                  <h4 className='text-black'>JavaScript</h4>
                   <img src={javascript} alt='' />
                 </div>
                 <div className='icon'>
-                  <h4 className='text-light'>SASS</h4>
+                  <h4 className='text-black'>SASS</h4>
                   <img src={sass} alt='' />
                 </div>
                 <div className='icon'>
-                  <h4 className='text-light'>React</h4>
+                  <h4 className='text-black'>React</h4>
                   <img src={react} alt='' />
                 </div>
                 <div className='icon'>
-                  <h4 className='text-light'>AdobeXD</h4>
+                  <h4 className='text-black'>AdobeXD</h4>
                   <img src={xd} alt='' />
+                </div>
+              </div>
+            </div>
+
+            {/* card-2 */}
+            <div className='about-wrapper'>
+              <h3 className='card-text text-center py-2'>Backend</h3>
+
+              <div className='grid grid-3 py-3'>
+                <div className='icon'>
+                  <h4 className='text-black'>Nodejs</h4>
+                  <img src={node} alt='' />
+                </div>
+
+                <div className='icon'>
+                  <h4 className='text-black'>mongoDB</h4>
+                  <img src={mongodb} alt='' />
+                </div>
+                <div className='icon'>
+                  <h4 className='text-black'>REST API</h4>
+                  <img src={API} alt='' />
+                </div>
+              </div>
+            </div>
+            {/* card-3 */}
+            <div className='about-wrapper'>
+              <h3 className='card-text text-center py-2'>
+                Learning In Progress
+              </h3>
+
+              <div className='grid grid-2 py-3'>
+                <div className='icon'>
+                  <h4 className='text-black'>WordPress</h4>
+                  <img src={WordPress} alt='' />
+                </div>
+
+                <div className='icon'>
+                  <h4 className='text-black'>MySQL</h4>
+                  <img src={MySQL} alt='' />
                 </div>
               </div>
             </div>
@@ -137,11 +190,11 @@ const Main = () => {
 
       {/* -------------Project section--------- */}
       <section className='project-section' id='project'>
-        <div className='container'>
+        <div className='container py-2'>
           <div className='project-header text-light' data-aos='zoom-in'>
             <h3>Work</h3>
             <h1>
-              Latest <span className='text-blue'>Project</span>
+              Website <span className='text-blue'>Project</span>
             </h1>
             <h3>
               Here you can find some of the projects that I created recently{' '}
@@ -302,8 +355,27 @@ const Main = () => {
                 </div>
               </div>
             </div>
-
             {/* item5 */}
+            <h1 className='text-light text-center lg'>
+              Video <span className='text-blue lg'>Project</span>
+            </h1>
+
+            <div className='project flex-wrap' data-aos='fade-up'>
+              <div className='image'>
+                <img src={VideoProject} alt='' />
+              </div>
+              <div className='project-content'>
+                <p>
+                  Here you can find out all my video projects that I created{' '}
+                </p>
+                <div className='buttoms'>
+                  <a href='/videoproject' className='btn btn-blue'>
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* item6 */}
           </div>
         </div>
       </section>
