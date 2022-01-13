@@ -295,11 +295,26 @@ $light-blue: #04c2dfc5;
       }
     }
   }
+  .about {
+    .about-wrapper {
+      margin: 3rem 0;
+    }
+    .about-icons {
+      .icon-text {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .about {
     padding: 0;
+    .about-body {
+      padding: 1rem 0;
+      margin: 0;
+    }
     .about-header {
       font-family: 'Abhaya Libre', serif;
       text-align: center;
@@ -324,6 +339,9 @@ $light-blue: #04c2dfc5;
     .about-image {
       padding-left: 2rem;
     }
+    .about-wrapper {
+      margin: 3rem 0;
+    }
     .about-icons {
       flex: 1 1 32rem;
 
@@ -331,6 +349,7 @@ $light-blue: #04c2dfc5;
         text-align: center;
         margin-left: 0;
         font-size: 2.5rem;
+        padding: 0;
       }
       .icon {
         text-align: center;
