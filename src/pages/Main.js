@@ -19,6 +19,7 @@ import JDSport from '../image/projects/JDSport.png'
 import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
 import palmtree from '../image/projects/palmtree.png'
+import yelpCamp from '../image/projects/YelpCamp.png'
 import { HashLink as Link } from 'react-router-hash-link'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -99,11 +100,10 @@ const Main = () => {
             <div className='about-content text-light' data-aos='fade-left'>
               <h3 className='text-blue'>Hello!</h3>
               <p>
-                My name is Jayden,Currently I'm working as a Videographer and
-                also is a self taught Frontend Web Developer using web
-                technologies to build amazing products and focusing on solving
-                problems for different niches and different industries using the
-                power of technology.
+                My name is Jayden,Currently I'm working as a Content Creator and
+                also is a Frontend Web Developer using web technologies to build
+                amazing products and focusing on solving problems for different
+                niches and different industries using the power of technology.
               </p>
               <p>
                 I will love to hear from you. Whether it’s a project. Job
@@ -254,6 +254,37 @@ const Main = () => {
                   </a>
                   <a
                     href='https://github.com/JaydenIsHere/JDSport'
+                    className='btn btn-blue'
+                  >
+                    Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* item1-1 */}
+            <div className='project flex-wrap' data-aos='fade-up'>
+              <div className='image'>
+                <img src={yelpCamp} alt='' />
+              </div>
+              <div className='project-content'>
+                <h1>
+                  Yelp Camp <span className='text-blue'>Full Stack</span>
+                </h1>
+                <p>
+                  This is a Full stack project, it allow user register an
+                  account and create thier own campground, there's a map to see
+                  your campground location. user also can comment on other
+                  user's campground.
+                </p>
+                <div className='buttoms'>
+                  <a
+                    href='https://cryptic-escarpment-33252.herokuapp.com/'
+                    className='btn btn-blue'
+                  >
+                    Visit Site
+                  </a>
+                  <a
+                    href='https://github.com/JaydenIsHere/YelpCamp'
                     className='btn btn-blue'
                   >
                     Repository
