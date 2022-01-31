@@ -31,6 +31,20 @@ const Main = () => {
   const [message, setMessage] = useState('')
   const [subject, setSubject] = useState('')
 
+  const changeColor = () => {
+    const contact = document.querySelector('.contact')
+    const contactSection = contact.offsetHeight
+    if (
+      window.innerHeight + window.pageYOffset + contactSection >=
+      document.body.offsetHeight
+    ) {
+      contact.classList.add('bg-color-1')
+    } else {
+      contact.classList.remove('bg-color-1')
+    }
+  }
+  window.addEventListener('scroll', changeColor)
+
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {

@@ -196,7 +196,8 @@ $light-blue: #04c2dfc5;
 }
 
 .contact {
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+
   .contact-header {
     font-family: 'Abhaya Libre', serif;
     text-align: center;
@@ -243,6 +244,17 @@ $light-blue: #04c2dfc5;
       -moz-appearance: none;
       appearance: none;
     }
+  }
+}
+.bg-color-1 {
+  background-color: rgb(247, 247, 247);
+  transition: all 2s ease;
+  font-weight: 500;
+  h3 {
+    color: black;
+  }
+  h1 {
+    color: black;
   }
 }
 @media only screen and (max-width: 1070px) {
