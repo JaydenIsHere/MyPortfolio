@@ -36,7 +36,13 @@ const VideoProject = () => {
             </div>
           </div>
           {/* card-2 */}
-          <div className='card grid-responsive bg-grey'>
+          <div
+            className='card grid-responsive bg-grey'
+            onClick={() =>
+              (window.location.href =
+                'https://www.youtube.com/watch?v=Wvfaohk4QVc&list=PLCftdv0B_JugTqUgAo4D02Vpf2-JdL4A9')
+            }
+          >
             <div className='card-image'>
               <img src={card2} alt='' />
             </div>

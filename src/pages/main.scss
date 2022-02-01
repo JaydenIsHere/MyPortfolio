@@ -201,6 +201,7 @@ $light-blue: #04c2dfc5;
   .contact-header {
     font-family: 'Abhaya Libre', serif;
     text-align: center;
+    padding: 1.8rem;
     margin-bottom: 1rem;
     h1 {
       font-size: 4rem;
@@ -220,13 +221,13 @@ $light-blue: #04c2dfc5;
       padding: 0.5rem;
       margin: 1rem 0;
       font-size: 1.3rem;
-      color: #333;
+      color: $black;
       text-transform: none;
       border: none;
       background-color: #f0f0f0;
       width: 100%;
       border-radius: 10px;
-      box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.2);
     }
     textarea {
       width: 100%;
@@ -236,7 +237,8 @@ $light-blue: #04c2dfc5;
       resize: none;
       background-color: #f0f0f0;
       border-radius: 10px;
-      box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.2);
+      border: 0;
     }
     input[type='submit'] {
       border: none;
@@ -248,13 +250,109 @@ $light-blue: #04c2dfc5;
 }
 .bg-color-1 {
   background-color: rgb(247, 247, 247);
-  transition: all 2s ease;
+  transition: all 1.8s ease;
   font-weight: 500;
   h3 {
     color: black;
   }
   h1 {
     color: black;
+  }
+}
+
+/*---------certification---------*/
+.certification {
+  background-color: black;
+  .cer-header {
+    font-family: 'Abhaya Libre', serif;
+    text-align: center;
+    padding: 1.8rem;
+    h1 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  .cer-container {
+    position: relative;
+    min-height: 80vh;
+    background: $black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+
+  .cer-container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    padding: 10px;
+  }
+  .cer-container .imageContent {
+    color: $white;
+    padding: 1rem 0;
+    text-align: center;
+    p {
+      padding: 0.2rem 0;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .cer-container .image-container .image {
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .cer-container .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+  }
+  .cer-container .image-container .image:hover img {
+    transform: scale(1.1);
+  }
+
+  .cer-container .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+  }
+
+  .cer-container .popup-image span {
+    /* cross */
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .cer-container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 800px;
+    object-fit: cover;
   }
 }
 @media only screen and (max-width: 1070px) {
@@ -316,6 +414,11 @@ $light-blue: #04c2dfc5;
         padding: 0;
         margin: 0;
       }
+    }
+  }
+  .certification {
+    .cer-container .popup-image img {
+      width: 95%;
     }
   }
 }
@@ -430,7 +533,20 @@ $light-blue: #04c2dfc5;
     .contact-header {
       font-family: 'Abhaya Libre', serif;
       text-align: center;
-
+      padding: 1.8rem;
+      h1 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .certification {
+    .cer-header {
+      font-family: 'Abhaya Libre', serif;
+      text-align: center;
+      padding: 1.8rem;
       h1 {
         font-size: 3rem;
       }
@@ -441,7 +557,7 @@ $light-blue: #04c2dfc5;
   }
 }
 
-@media only screen and(max-width:400px) {
+@media only screen and(max-width:420px) {
   .about {
     .about-content {
       flex: 1 1 32rem;
@@ -452,6 +568,38 @@ $light-blue: #04c2dfc5;
       p {
         font-size: 16px;
         padding: 1rem 0;
+      }
+    }
+  }
+  .contact {
+    .contact-header {
+      font-family: 'Abhaya Libre', serif;
+      text-align: center;
+      padding: 1.8rem;
+      h1 {
+        font-size: 2.2rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+      }
+    }
+    input[type='submit'] {
+      padding: 0.8rem 2rem;
+    }
+  }
+  .certification {
+    .cer-container .popup-image img {
+      width: 85%;
+    }
+    .cer-header {
+      font-family: 'Abhaya Libre', serif;
+      text-align: center;
+      padding: 1.8rem;
+      h1 {
+        font-size: 2.2rem;
+      }
+      h3 {
+        font-size: 1.4rem;
       }
     }
   }

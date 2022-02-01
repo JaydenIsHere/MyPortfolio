@@ -31,6 +31,9 @@ const Navbar = () => {
             <Link to='/#project' onClick={handleClose}>
               Project
             </Link>
+            <Link to='/#certification' onClick={handleClose}>
+              Certification
+            </Link>
             <Link to='/#contact' onClick={handleClose}>
               Contact
             </Link>

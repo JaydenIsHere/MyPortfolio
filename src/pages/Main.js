@@ -20,6 +20,8 @@ import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
 import palmtree from '../image/projects/palmtree.png'
 import yelpCamp from '../image/projects/YelpCamp.png'
+import certificate1 from '../image/certificate-1.png'
+import certificate2 from '../image/certificate-2.JPG'
 import { HashLink as Link } from 'react-router-hash-link'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -33,14 +35,15 @@ const Main = () => {
 
   const changeColor = () => {
     const contact = document.querySelector('.contact')
-    const contactSection = contact.offsetHeight
-    if (
-      window.innerHeight + window.pageYOffset + contactSection >=
-      document.body.offsetHeight
-    ) {
-      contact.classList.add('bg-color-1')
-    } else {
-      contact.classList.remove('bg-color-1')
+    if (contact) {
+      if (
+        window.innerHeight + window.pageYOffset + contact.offsetHeight >
+        document.body.offsetHeight
+      ) {
+        contact.classList.add('bg-color-1')
+      } else {
+        contact.classList.remove('bg-color-1')
+      }
     }
   }
   window.addEventListener('scroll', changeColor)
@@ -67,6 +70,18 @@ const Main = () => {
     setMessage('')
     setSubject('')
     navigate('/thankyou')
+  }
+  //popup image
+  const openImage = (e) => {
+    if (e.target.classList.contains('cer-image')) {
+      const src = e.target.getAttribute('src')
+      document.querySelector('.popup-img').src = src
+      document.querySelector('.popup-image').style.display = 'block'
+    }
+  }
+
+  const closeImage = () => {
+    document.querySelector('.popup-image').style.display = 'none'
   }
 
   return (
@@ -275,6 +290,36 @@ const Main = () => {
                 </div>
               </div>
             </div>
+            {/* item2 */}
+            <div className='project flex-wrap' data-aos='fade-up'>
+              <div className='image'>
+                <img src={BEFIT} alt='' />
+              </div>
+              <div className='project-content'>
+                <h1>
+                  BEFIT <span className='text-blue'>React/SASS</span>
+                </h1>
+                <p>
+                  This is a fully responsive single page website, I implemented
+                  the carousel function to make a dynamic and informative
+                  website..{' '}
+                </p>
+                <div className='buttoms'>
+                  <a
+                    href='https://happy-jackson-02c00c.netlify.app/'
+                    className='btn btn-blue'
+                  >
+                    Visit Site
+                  </a>
+                  <a
+                    href='https://github.com/JaydenIsHere/BeFitGym'
+                    className='btn btn-blue'
+                  >
+                    Repository
+                  </a>
+                </div>
+              </div>
+            </div>
             {/* item1-1 */}
             <div className='project flex-wrap' data-aos='fade-up'>
               <div className='image'>
@@ -306,36 +351,7 @@ const Main = () => {
                 </div>
               </div>
             </div>
-            {/* item2 */}
-            <div className='project flex-wrap' data-aos='fade-up'>
-              <div className='image'>
-                <img src={BEFIT} alt='' />
-              </div>
-              <div className='project-content'>
-                <h1>
-                  BEFIT <span className='text-blue'>React/SASS</span>
-                </h1>
-                <p>
-                  This is a fully responsive single page website, I implemented
-                  the carousel function to make a dynamic and informative
-                  website..{' '}
-                </p>
-                <div className='buttoms'>
-                  <a
-                    href='https://happy-jackson-02c00c.netlify.app/'
-                    className='btn btn-blue'
-                  >
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/BeFitGym'
-                    className='btn btn-blue'
-                  >
-                    Repository
-                  </a>
-                </div>
-              </div>
-            </div>
+
             {/* item3 */}
 
             <div className='project flex-wrap' data-aos='fade-up'>
@@ -421,6 +437,56 @@ const Main = () => {
               </div>
             </div>
             {/* item6 */}
+          </div>
+        </div>
+        {/* ------------------certification section----------- */}
+      </section>
+      <section className='certification' id='certification'>
+        <div
+          className='cer-header text-light text-center py-2'
+          data-aos='zoom-in'
+        >
+          <h3>Additional Certification</h3>
+          <h1>
+            Continue <span className='text-blue'>Learning</span>
+          </h1>
+          <h3>Learning is not only in school but for lifetime</h3>
+        </div>
+        <div class='cer-container'>
+          <div className='image-container'>
+            <div className='imageWrapper'>
+              <div className='image' onClick={openImage}>
+                <img src={certificate1} alt='' className='cer-image' />
+              </div>
+              <div className='imageContent'>
+                <p>
+                  Course:{' '}
+                  <span className='text-blue'>
+                    The Web Developer Bootcamp 2021
+                  </span>
+                </p>
+                <p>Length: 63.5 hours</p>
+                <p>Instructor: Colt Steele</p>
+              </div>
+            </div>
+
+            <div className='imageWrapper'>
+              <div className='image' onClick={openImage}>
+                <img src={certificate2} className='cer-image' alt='' />
+              </div>
+              <div className='imageContent'>
+                <p>
+                  Course:{' '}
+                  <span className='text-blue'>MERN eCommerce From Scratch</span>
+                </p>
+                <p>Length: 15.5 hours</p>
+                <p>Instructor: Brad Traversy</p>
+              </div>
+            </div>
+          </div>
+          <div className='popup-image'>
+            <span onClick={closeImage}>&times;</span>
+            <img src={certificate1} alt='' className='popup-img' />
           </div>
         </div>
       </section>
