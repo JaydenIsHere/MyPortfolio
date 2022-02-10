@@ -10,7 +10,6 @@ import xd from '../image/XD.png'
 import node from '../image/nodejs.png'
 import mongodb from '../image/mongodb.png'
 import API from '../image/API.png'
-import MySQL from '../image/MySQL.png'
 import PHP from '../image/PHP.png'
 import WordPress from '../image/WordPress.png'
 import VideoProject from '../image/Video Project.jpg'
@@ -530,8 +529,8 @@ const Main = () => {
                   <span className='text-blue line'>
                     Become a WordPress Developer :{' '}
                   </span>
-                  <p className='text-blue line'>Unlocking Power With Code</p>
                 </p>
+                <p className='text-blue line'>Unlocking Power With Code</p>
                 <p>Length: 35.5 hours</p>
                 <p>Instructor: Brad Schiff</p>
               </div>
