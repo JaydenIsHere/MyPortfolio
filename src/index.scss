@@ -243,6 +243,10 @@ body {
   font-size: 4rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);

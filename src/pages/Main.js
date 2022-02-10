@@ -394,8 +394,8 @@ const Main = () => {
               <div className='project-content'>
                 <h1>
                   Fictional University{' '}
-                  <span className='text-blue'>
-                    Wordpress site(PHP / Javascript)
+                  <span className='text-blue inline-block'>
+                    Wordpress site (PHP/Javascript)
                   </span>
                 </h1>
                 <p>
