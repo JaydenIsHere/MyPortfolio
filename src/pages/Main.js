@@ -11,6 +11,7 @@ import node from '../image/nodejs.png'
 import mongodb from '../image/mongodb.png'
 import API from '../image/API.png'
 import MySQL from '../image/MySQL.png'
+import PHP from '../image/PHP.png'
 import WordPress from '../image/WordPress.png'
 import VideoProject from '../image/Video Project.jpg'
 import foodStore from '../image/projects/Food store.png'
@@ -20,8 +21,10 @@ import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
 import palmtree from '../image/projects/palmtree.png'
 import yelpCamp from '../image/projects/YelpCamp.png'
+import fictionalUniversity from '../image/projects/fictional-university.png'
 import certificate1 from '../image/certificate-1.png'
 import certificate2 from '../image/certificate-2.JPG'
+import certificate3 from '../image/certificate-3.jpg'
 import { HashLink as Link } from 'react-router-hash-link'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -189,8 +192,14 @@ const Main = () => {
                   <h4 className='text-black'>mongoDB</h4>
                   <img src={mongodb} alt='' />
                 </div>
+
                 <div className='icon'>
-                  <h4 className='text-black'>REST API</h4>
+                  <h4 className='text-black'>PHP</h4>
+                  <img className='php' src={PHP} alt='' />
+                </div>
+
+                <div className='icon'>
+                  <h4 className='text-black'>Rest API</h4>
                   <img src={API} alt='' />
                 </div>
               </div>
@@ -198,18 +207,13 @@ const Main = () => {
             {/* card-3 */}
             <div className='about-wrapper'>
               <h3 className='card-text text-center py-2'>
-                Learning In Progress
+                Content Management System
               </h3>
 
-              <div className='grid grid-2 py-3'>
+              <div className='grid grid-1 py-3'>
                 <div className='icon'>
                   <h4 className='text-black'>WordPress</h4>
                   <img src={WordPress} alt='' />
-                </div>
-
-                <div className='icon'>
-                  <h4 className='text-black'>MySQL</h4>
-                  <img src={MySQL} alt='' />
                 </div>
               </div>
             </div>
@@ -388,6 +392,37 @@ const Main = () => {
             {/* item4 */}
 
             <div className='project flex-wrap' data-aos='fade-up'>
+              <div className='project-content'>
+                <h1>
+                  Fictional University{' '}
+                  <span className='text-blue'>
+                    Wordpress site(PHP / Javascript)
+                  </span>
+                </h1>
+                <p>
+                  This is wordpress site. Student can use google map to check
+                  location,they also can create/update/delete thier own a note
+                  after they login...{' '}
+                </p>
+                <div className='buttoms'>
+                  <a href='https://jaydenishere.com/' className='btn btn-blue'>
+                    Visit Site
+                  </a>
+                  <a
+                    href='https://github.com/JaydenIsHere/fictional-university'
+                    className='btn btn-blue'
+                  >
+                    Repository
+                  </a>
+                </div>
+              </div>
+              <div className='image'>
+                <img src={fictionalUniversity} alt='' />
+              </div>
+            </div>
+            {/* item5 */}
+
+            <div className='project flex-wrap' data-aos='fade-up'>
               <div className='image'>
                 <img src={palmtree} alt='' />
               </div>
@@ -416,7 +451,8 @@ const Main = () => {
                 </div>
               </div>
             </div>
-            {/* item5 */}
+            {/* item6 */}
+
             <h1 className='text-light text-center lg'>
               Video <span className='text-blue lg'>Project</span>
             </h1>
@@ -436,7 +472,7 @@ const Main = () => {
                 </div>
               </div>
             </div>
-            {/* item6 */}
+            {/* item7 */}
           </div>
         </div>
         {/* ------------------certification section----------- */}
@@ -479,8 +515,25 @@ const Main = () => {
                   Course:{' '}
                   <span className='text-blue'>MERN eCommerce From Scratch</span>
                 </p>
-                <p>Length: 15.5 hours</p>
+                <p>Length: 15 hours</p>
                 <p>Instructor: Brad Traversy</p>
+              </div>
+            </div>
+
+            <div className='imageWrapper'>
+              <div className='image' onClick={openImage}>
+                <img src={certificate3} className='cer-image' alt='' />
+              </div>
+              <div className='imageContent'>
+                <p className='p-3'>
+                  Course:{' '}
+                  <span className='text-blue line'>
+                    Become a WordPress Developer :{' '}
+                  </span>
+                  <p className='text-blue line'>Unlocking Power With Code</p>
+                </p>
+                <p>Length: 35.5 hours</p>
+                <p>Instructor: Brad Schiff</p>
               </div>
             </div>
           </div>

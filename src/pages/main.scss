@@ -131,8 +131,14 @@ $light-blue: #04c2dfc5;
     }
     .icon {
       text-align: center;
+
       img {
         width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .php {
+        width: 145px;
         height: 100px;
         object-fit: cover;
       }
@@ -291,6 +297,9 @@ $light-blue: #04c2dfc5;
     gap: 2rem;
     justify-content: center;
     padding: 10px;
+    .imageWrapper {
+      padding: 1rem;
+    }
   }
   .cer-container .imageContent {
     color: $white;
@@ -298,7 +307,11 @@ $light-blue: #04c2dfc5;
     text-align: center;
     p {
       padding: 0.2rem 0;
+
       span {
+        font-weight: 700;
+      }
+      .line {
         font-weight: 700;
       }
     }
