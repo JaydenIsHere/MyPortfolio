@@ -391,6 +391,9 @@ const Main = () => {
             {/* item4 */}
 
             <div className='project flex-wrap' data-aos='fade-up'>
+              <div className='image'>
+                <img src={fictionalUniversity} alt='' />
+              </div>
               <div className='project-content'>
                 <h1>
                   Fictional University{' '}
@@ -414,9 +417,6 @@ const Main = () => {
                     Repository
                   </a>
                 </div>
-              </div>
-              <div className='image'>
-                <img src={fictionalUniversity} alt='' />
               </div>
             </div>
             {/* item5 */}
