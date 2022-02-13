@@ -86,6 +86,16 @@ const Main = () => {
     document.querySelector('.popup-image').style.display = 'none'
   }
 
+  const clickBackgroundCloseImage = () => {
+    document.querySelector('.popup-image').style.display = 'none'
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelector('.popup-image').style.display = 'none'
+    }
+  })
+
   return (
     <>
       {/* -------------home section--------- */}
@@ -536,7 +546,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div className='popup-image'>
+          <div className='popup-image' onClick={clickBackgroundCloseImage}>
             <span onClick={closeImage}>&times;</span>
             <img src={certificate1} alt='' className='popup-img' />
           </div>
