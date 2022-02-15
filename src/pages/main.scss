@@ -187,9 +187,38 @@ $light-blue: #04c2dfc5;
           }
         }
 
-        .buttoms .btn {
-          margin: 0 1rem;
-          font-weight: bold;
+        .project-buttoms {
+          display: flex;
+          justify-content: space-between;
+
+          .project-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+            background-color: $blue;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 600;
+            height: 4rem;
+            padding: 1rem;
+
+            &:hover {
+              transform: scale(0.95);
+            }
+            i {
+              margin-left: 5px;
+              font-size: 1.3rem;
+            }
+            p {
+              color: #000;
+            }
+          }
+        }
+        .video-btn {
+          display: flex;
+          justify-content: center;
+          font-weight: 500;
         }
       }
       .image {
@@ -379,7 +408,7 @@ $light-blue: #04c2dfc5;
       p {
         text-align: center;
       }
-      .buttoms {
+      .project-buttoms {
         text-align: center;
       }
     }
@@ -529,10 +558,18 @@ $light-blue: #04c2dfc5;
             }
           }
 
-          .buttoms .btn {
-            display: block;
-            margin: 1rem 0;
-            font-weight: bold;
+          .project-buttoms {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+
+            gap: 1rem;
+            .project-btn {
+              justify-content: center;
+              height: 3.5rem;
+              padding: 1rem;
+            }
           }
         }
         .image {

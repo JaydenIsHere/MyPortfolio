@@ -257,19 +257,27 @@ const Main = () => {
                   submit the contact form and business owner will receive the
                   message via email.{' '}
                 </p>
-                <div className='buttoms'>
-                  <a
-                    href='https://hardcore-lovelace-4d4ea3.netlify.app/'
-                    className='btn btn-blue'
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://hardcore-lovelace-4d4ea3.netlify.app/')
+                    }
                   >
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/Restaurant.JaydenIsHere.github.io'
-                    className='btn btn-blue'
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/JaydenIsHere/Restaurant.JaydenIsHere.github.io')
+                    }
                   >
-                    Repository
-                  </a>
+                    <i className='fa-brands fa-github'></i>
+                    <p>Repository</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -287,19 +295,28 @@ const Main = () => {
                   This is a fully responsive multi page ecommerce website, user
                   able to view product detail / user sign up /cart page.
                 </p>
-                <div className='buttoms'>
-                  <a
-                    href='https://brave-shannon-e4cbbb.netlify.app/index.html'
-                    className='btn btn-blue'
+
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://brave-shannon-e4cbbb.netlify.app/index.html')
+                    }
                   >
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/JDSport'
-                    className='btn btn-blue'
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/JaydenIsHere/JDSport')
+                    }
                   >
-                    Repository
-                  </a>
+                    <i className='fa-brands fa-github'></i>
+                    <p>Repository</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -317,19 +334,28 @@ const Main = () => {
                   the carousel function to make a dynamic and informative
                   website..{' '}
                 </p>
-                <div className='buttoms'>
-                  <a
-                    href='https://happy-jackson-02c00c.netlify.app/'
-                    className='btn btn-blue'
+
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://happy-jackson-02c00c.netlify.app/')
+                    }
                   >
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/BeFitGym'
-                    className='btn btn-blue'
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/JaydenIsHere/BeFitGym')
+                    }
                   >
-                    Repository
-                  </a>
+                    <i className='fa-brands fa-github'></i>
+                    <p>Repository</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -348,19 +374,28 @@ const Main = () => {
                   your campground location. user also can comment on other
                   user's campground.
                 </p>
-                <div className='buttoms'>
-                  <a
-                    href='https://cryptic-escarpment-33252.herokuapp.com/'
-                    className='btn btn-blue'
+
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://cryptic-escarpment-33252.herokuapp.com/')
+                    }
                   >
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/YelpCamp'
-                    className='btn btn-blue'
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/JaydenIsHere/YelpCamp')
+                    }
                   >
-                    Repository
-                  </a>
+                    <i className='fa-brands fa-github'></i>
+                    <p>Repository</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -382,19 +417,28 @@ const Main = () => {
                   business owner can a access admin account and manage order and
                   user list.{' '}
                 </p>
-                <div className='buttoms'>
-                  <a
-                    href='https://proshop1711.herokuapp.com/'
-                    className='btn btn-blue'
+
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://proshop1711.herokuapp.com/')
+                    }
                   >
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/Proshop'
-                    className='btn btn-blue'
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/JaydenIsHere/Proshop')
+                    }
                   >
-                    Repository
-                  </a>
+                    <i className='fa-brands fa-github'></i>
+                    <p>Repository</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -416,16 +460,27 @@ const Main = () => {
                   location,they also can create/update/delete thier own a note
                   after they login...{' '}
                 </p>
-                <div className='buttoms'>
-                  <a href='https://jaydenishere.com/' className='btn btn-blue'>
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/fictional-university'
-                    className='btn btn-blue'
+
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href = 'https://jaydenishere.com/')
+                    }
                   >
-                    Repository
-                  </a>
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/JaydenIsHere/fictional-university')
+                    }
+                  >
+                    <i className='fa-brands fa-github'></i>
+                    <p>Repository</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -444,19 +499,28 @@ const Main = () => {
                   This is a single page website and fully responsive. I created
                   it from design to develop all done by me{' '}
                 </p>
-                <div className='buttoms'>
-                  <a
-                    href='https://fervent-aryabhata-35842f.netlify.app/'
-                    className='btn btn-blue'
+
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://fervent-aryabhata-35842f.netlify.app/')
+                    }
                   >
-                    Visit Site
-                  </a>
-                  <a
-                    href='https://github.com/JaydenIsHere/PalmTree'
-                    className='btn btn-blue'
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://github.com/JaydenIsHere/PalmTree')
+                    }
                   >
-                    Repository
-                  </a>
+                    <i className='fa-brands fa-github'></i>
+                    <p>Repository</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -471,14 +535,13 @@ const Main = () => {
                 <img src={VideoProject} alt='' />
               </div>
               <div className='project-content'>
-                <p>
+                <p className='text-center'>
                   Here you can find out all my video projects that I created{' '}
                 </p>
-                <div className='buttoms'>
-                  <Link to='/videoproject' className='btn btn-blue'>
-                    View Project
-                  </Link>
-                </div>
+
+                <Link to='/videoproject' className='video-btn btn btn-blue'>
+                  View Project
+                </Link>
               </div>
             </div>
             {/* item7 */}
