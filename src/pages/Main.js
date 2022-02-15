@@ -141,10 +141,10 @@ const Main = () => {
             <div className='about-content text-light' data-aos='fade-left'>
               <h3 className='text-blue'>Hello!</h3>
               <p>
-                My name is Jayden,Currently I'm working as a Content Creator and
-                also is a Frontend Web Developer using web technologies to build
-                amazing products and focusing on solving problems for different
-                niches and different industries using the power of technology.
+                My name is Jayden. Currently I'm working as a Content Creator
+                and also as a Frontend Web Developer using web technologies to
+                build amazing products and focusing on solving problems for
+                different niches and industries using the power of technology.
               </p>
               <p>
                 I will love to hear from you. Whether it’s a project. Job
