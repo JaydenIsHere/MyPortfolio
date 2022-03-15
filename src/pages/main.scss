@@ -137,11 +137,22 @@ $light-blue: #04c2dfc5;
         width: 100px;
         height: 100px;
         object-fit: cover;
+        overflow: hidden;
       }
       .php {
-        width: 145px;
-        height: 100px;
+        margin: 15px 0;
+        width: 100px;
+        height: auto;
         object-fit: cover;
+      }
+      .elementor {
+        margin: 15px 0;
+        width: 250px;
+        height: auto;
+      }
+      .woocommerce {
+        width: 150px;
+        height: auto;
       }
     }
   }
@@ -162,9 +173,10 @@ $light-blue: #04c2dfc5;
     }
   }
   .projects {
-    .flex-wrap:nth-child(2),
-    .flex-wrap:nth-child(4),
-    .flex-wrap:nth-child(6) {
+    .flex-wrap:nth-child(1),
+    .flex-wrap:nth-child(3),
+    .flex-wrap:nth-child(5),
+    .flex-wrap:nth-child(7) {
       flex-direction: row-reverse;
     }
     .project {
@@ -461,6 +473,24 @@ $light-blue: #04c2dfc5;
         margin: 0;
       }
     }
+    .about-icons {
+      .icon {
+        text-align: center;
+        img {
+          width: 90px;
+          height: 90px;
+          object-fit: cover;
+        }
+        .elementor {
+          width: 150px;
+          height: auto;
+        }
+        .woocommerce {
+          width: 90px;
+          height: auto;
+        }
+      }
+    }
   }
   .certification {
     .cer-container .popup-image img {
@@ -488,6 +518,7 @@ $light-blue: #04c2dfc5;
     }
     .about-icons .grid-3 {
       grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
     .about-content {
       flex: 1 1 32rem;
@@ -518,6 +549,20 @@ $light-blue: #04c2dfc5;
           width: 90px;
           height: 90px;
           object-fit: cover;
+        }
+        .php {
+          width: 100px;
+          height: auto;
+          object-fit: cover;
+        }
+        .elementor {
+          width: 150px;
+          height: auto;
+        }
+        .woocommerce {
+          margin-top: 15px;
+          width: 90px;
+          height: auto;
         }
       }
       .card-text {

@@ -12,10 +12,13 @@ import mongodb from '../image/mongodb.png'
 import API from '../image/API.png'
 import PHP from '../image/PHP.png'
 import WordPress from '../image/WordPress.png'
+import WooCommerce from '../image/WooCommerce.png'
+import Elementor from '../image/Elementor.png'
 import VideoProject from '../image/Video Project.jpg'
 import foodStore from '../image/projects/Food store.png'
 import JDweb from '../image/JD web.png'
 import JDSport from '../image/projects/JDSport.png'
+import stylestore from '../image/projects/stylestore.png'
 import BEFIT from '../image/projects/BEFIT.png'
 import Proshop from '../image/projects/Proshop.png'
 import palmtree from '../image/projects/palmtree.png'
@@ -219,10 +222,20 @@ const Main = () => {
                 Content Management System
               </h3>
 
-              <div className='grid grid-1 py-3'>
+              <div className='grid grid-3 py-3'>
                 <div className='icon'>
                   <h4 className='text-black'>WordPress</h4>
                   <img src={WordPress} alt='' />
+                </div>
+
+                <div className='icon'>
+                  <h4 className='text-black'>Woocommerce</h4>
+                  <img className='woocommerce' src={WooCommerce} alt='' />
+                </div>
+
+                <div className='icon'>
+                  <h4 className='text-black'>Elementor</h4>
+                  <img className='elementor' src={Elementor} alt='' />
                 </div>
               </div>
             </div>
@@ -243,6 +256,40 @@ const Main = () => {
             </h3>
           </div>
           <div className='projects'>
+            {/* --------------------------item start line ----------------------------*/}
+            <div className='project flex-wrap' data-aos='fade-up'>
+              <div className='image'>
+                <img src={stylestore} alt='' />
+              </div>
+              <div className='project-content'>
+                <h1>
+                  StyleStore{' '}
+                  <span className='text-blue'>
+                    Wordpress/Woocommerce/Elementor
+                  </span>
+                </h1>
+                <p>
+                  Woocommerce provided comprehensive ecommerce solusion to build
+                  up the site more efficient and I use Elementor to fully
+                  customize the theme to make ecoomerce site looks stunning.The
+                  payment gateway has been done that the site is ready receive
+                  the payment from customers{' '}
+                </p>
+                <div className='project-buttoms'>
+                  <div
+                    className='project-btn'
+                    onClick={() =>
+                      (window.location.href =
+                        'https://stylestore.jaydenishere.com/')
+                    }
+                  >
+                    <i className='fa-solid fa-code' />
+                    <p>Visit Site</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* item1 */}
             <div className='project flex-wrap' data-aos='fade-up'>
               <div className='image'>
                 <img src={foodStore} alt='' />
@@ -281,7 +328,7 @@ const Main = () => {
                 </div>
               </div>
             </div>
-            {/* item1 */}
+            {/* item2 */}
             <div className='project flex-wrap' data-aos='fade-up'>
               <div className='image'>
                 <img src={JDSport} alt='' />
