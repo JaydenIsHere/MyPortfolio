@@ -32,11 +32,19 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './main.scss'
+import sanitize from 'sanitize-html'
 const Main = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [subject, setSubject] = useState('')
+
+  const cleanify = (html) => {
+    return sanitize(html, {
+      allowedTags: false,
+      allowedAttributes: false,
+    })
+  }
 
   const changeColor = () => {
     const contact = document.querySelector('.contact')
@@ -57,8 +65,7 @@ const Main = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name, email, message, subject)
-
+   
     axios.defaults.headers.post['Content-Type'] = 'application/json'
     axios
       .post('https://formsubmit.co/ajax/classic19931126@gmail.com', {
@@ -690,7 +697,7 @@ const Main = () => {
               name='name'
               placeholder='Name'
               className='box'
-              value={name}
+              value={cleanify(name)}
               onChange={(e) => setName(e.target.value)}
               required
             />
@@ -702,7 +709,7 @@ const Main = () => {
               name='subject'
               placeholder='Subject'
               className='box'
-              value={subject}
+              value={cleanify(subject)}
               onChange={(e) => setSubject(e.target.value)}
             />
             <label htmlFor='email'>Email</label>
@@ -713,7 +720,7 @@ const Main = () => {
               name='email'
               placeholder='Email'
               className='box'
-              value={email}
+              value={cleanify(email)}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
@@ -724,7 +731,7 @@ const Main = () => {
               id='message'
               cols='30'
               rows='10'
-              value={message}
+              value={cleanify(message)}
               placeholder='Message'
               onChange={(e) => setMessage(e.target.value)}
               required
